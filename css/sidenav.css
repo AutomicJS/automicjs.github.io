@@ -1,0 +1,67 @@
+/**
+ * Sidenav
+ */
+
+.sidenav {
+    padding-top: 1rem;
+    height: 90vh;
+}
+.sidenav.scrollbar {
+    overflow-y: scroll;
+}
+
+.array-list > a {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor:pointer;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+}
+
+.array-list > a:hover {
+    display: block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor:pointer;
+    text-decoration: underline;
+    color: #1c75bc !important;
+}
+
+.sidenav-toggler-button {
+    display: none;
+}
+.open {
+    display: block !important;
+}
+
+@media screen and (max-width: 749px) {
+    .sidenav-toggler-button {
+        display: block;
+    }
+    #sidenav-list {
+        display: none;
+    }
+    .bars {
+        display: block;
+        padding-left: 16px;
+        cursor: pointer;
+        transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        position: absolute;
+        z-index: 1100 !important;
+    }
+    .bars:hover > .bar {
+        background-color: #1c75bc;
+    }
+    .bars > .bar {
+        width: 25px;
+        height: 2px;
+        background-color: #333;
+        margin: 4px 0;
+    }
+}
